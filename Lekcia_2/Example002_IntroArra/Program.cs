@@ -78,3 +78,51 @@
 
 // int pos = IndexOf(array, 4);
 // Console.WriteLine(pos);
+
+
+int[] array = {63, 2, 25, 65, 87, 1, 34, 98, 100};
+
+int count = array.Length;
+int n = 0;
+
+void SortedArray(int[] array)
+{
+    while (n < count)
+    {
+        int index = 1;
+        int max = array[0];
+        int temp = 0;
+        while (index < count)
+        {
+            if (max < array[index])
+            {
+                temp = max;
+                max = array[index];
+                array[index-1] = temp;
+        
+            }
+            else
+            {
+                temp = array[index];
+                array[index] = max;
+                array[index-1] = temp;
+            }    
+            index++;
+        }
+        count--;    
+    }    
+}
+
+void PrintArray(int[] col)
+    {
+        int count = col.Length;
+        int position = 0;
+        while (position < count)
+        {
+            Console.Write($"{col[position]} ");
+            position++;
+        }
+    }
+
+SortedArray(array);
+PrintArray(array);
