@@ -54,14 +54,16 @@
 //     }
 // }    
 
-Console.WriteLine("Введите число");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-if (num%7 == 0 && num%23 == 0)
-{
-    Console.Write($"{num} -> Yes");
-}
-else
-{
-    Console.WriteLine($"{num} -> No");
-}
+// if (num%7 == 0 && num%23 == 0)
+// {
+//     Console.Write($"{num} -> Yes");
+// }
+// else
+// {
+//     Console.WriteLine($"{num} -> No");
+// }
+
+
