@@ -57,11 +57,11 @@
 // Console.WriteLine("Введите любое число");
 // int num = Convert.ToInt32(Console.ReadLine());
 
-// if (num == 1 || num == 2 || num == 3 || num == 4 || num == 5)
+// if (num > 1 && num < 6)
 // {
 //     Console.WriteLine("Сегодня будний день:(");
 // }
-// else if(num == 6 || num == 7)
+// else if(num > 5 && num < 8)
 // {
 //     Console.WriteLine("Сегодня выходной!!!:D");
 // }
