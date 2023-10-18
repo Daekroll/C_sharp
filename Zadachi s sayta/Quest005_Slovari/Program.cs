@@ -66,3 +66,32 @@
 //       return result;
 //     }
 // System.Console.WriteLine(basicOp('+', 19, 38));
+
+
+// Вывод инициалов имени.
+
+
+//     string name = "John Veek";
+//     //get the index of the space
+//     int posOfSpace = name.IndexOf(" ");
+    
+//     //build a string with the first character, the period, and the first character AFTER the space
+//     string abbrevName = name.Substring(0, 1) + "." + name.Substring(posOfSpace+1, 1);
+    
+//     //return the result in uppercase (since some random testcases had lowercase names)
+//     System.Console.WriteLine(posOfSpace);
+//     System.Console.WriteLine(abbrevName);
+
+long n = 98732;
+long[] Digitize(long n)
+{
+List<long> answer = new List<long>();
+string stringDigit = n.ToString();
+for(int i = stringDigit.Length - 1; i >= 0; i--)
+{
+answer.Add(stringDigit[i] - '0');
+}
+return answer.ToArray();
+}
+Digitize(n);
+System.Console.WriteLine(n);
