@@ -28,6 +28,41 @@
 //     Console.WriteLine("Это не день недели");
 // }
 
-string str = "abcdefg";
+// string str = "abcdefg";
 
-System.Console.WriteLine(str.Substring(1, str.Length - 2));
+// System.Console.WriteLine(str.Substring(1, str.Length - 2));
+
+// int[] a = {1, 6, 3, -7, 18};
+
+// System.Console.WriteLine(a.Min());
+
+// Калькуляционный метод через switch
+
+// double basicOp(char operation, double value1, double value2)
+//     {
+//      double result;
+//       switch(operation)
+//         {
+//           case '+':
+//           result = value1 + value2;
+//           break;
+          
+//           case '-':
+//           result = value1 - value2;
+//           break;
+          
+//           case '/':
+//           result = value1 / value2;
+//           break;
+          
+//           case '*':
+//           result = value1 * value2;
+//           break;
+          
+//           default:
+//           result = 0;
+//           break;
+//       }
+//       return result;
+//     }
+// System.Console.WriteLine(basicOp('+', 19, 38));
