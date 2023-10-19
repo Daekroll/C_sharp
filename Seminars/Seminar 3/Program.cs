@@ -79,10 +79,18 @@
 
 // Console.WriteLine(Math.Sqrt(Math.Pow((x1-x2),2)+Math.Pow((y1-y2), 2)));
 
-Console.WriteLine("Введите число");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 1; i <= num; i++)
-{
-    Console.Write(Math.Pow(i, 2) + " ");
-}
+// for (int i = 1; i <= num; i++)
+// {
+//     Console.Write(Math.Pow(i, 2) + " ");
+// }
+
+// Разворот числа на 180 градусов)
+
+// int reverse = 0;
+//         int temp = number;
+//         while (temp > 0){
+//             reverse = reverse * 10 + temp % 10;
+//             temp /= 10;
