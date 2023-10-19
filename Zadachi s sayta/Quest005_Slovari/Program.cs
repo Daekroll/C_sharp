@@ -82,16 +82,16 @@
 //     System.Console.WriteLine(posOfSpace);
 //     System.Console.WriteLine(abbrevName);
 
-long n = 98732;
-long[] Digitize(long n)
-{
-List<long> answer = new List<long>();
-string stringDigit = n.ToString();
-for(int i = stringDigit.Length - 1; i >= 0; i--)
-{
-answer.Add(stringDigit[i] - '0');
-}
-return answer.ToArray();
-}
-Digitize(n);
-System.Console.WriteLine(n);
+// long n = 98732;
+// long[] Digitize(long n)
+// {
+// List<long> answer = new List<long>();
+// string stringDigit = n.ToString();
+// for(int i = stringDigit.Length - 1; i >= 0; i--)
+// {
+// answer.Add(stringDigit[i] - '0');
+// }
+// return answer.ToArray();
+// }
+// Digitize(n);
+// System.Console.WriteLine(n);
