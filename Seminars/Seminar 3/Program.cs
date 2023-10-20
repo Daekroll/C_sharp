@@ -94,3 +94,33 @@
 //         while (temp > 0){
 //             reverse = reverse * 10 + temp % 10;
 //             temp /= 10;
+// int i = 0;
+// int[] myArray = { 1, 2, 3, 4, 5 };
+// int itemToRemove = 3;
+// Array.Remove(myArray, itemToRemove);
+
+// while (i < myArray.Length)
+// {
+//     Console.WriteLine(myArray[i]);
+// }
+
+// int i = 0;
+// List<int> myList = new List<int> { 1, 2, 3, 19, 81, 4, 5 };
+// int itemToRemove = 3;
+// myList.Remove(itemToRemove);
+
+// while (i < myList.Count)
+// {
+//     Console.WriteLine(myList[i]);
+//     i++;
+// }
+int i = 0;
+int[] s = {3,4,4,3,6,3};
+int[] a = s.Reverse().ToArray();
+int[] b = a.Distinct().ToArray();
+int[] q = b.Reverse().ToArray();
+while (i < q.Length)
+{
+    Console.WriteLine(q[i]);
+    i++;
+}
