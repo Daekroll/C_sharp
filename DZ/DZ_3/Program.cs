@@ -61,3 +61,32 @@
 // }
 
 // CreateArray(range);
+
+
+using System.Security.Principal;
+
+System.Console.WriteLine("Введите число");
+int num = Convert.ToInt32(Console.ReadLine());
+
+int SumCharNumber(int a)
+{
+    int result = 0;
+    while (a > 0)
+    {
+        result+=a%10;
+        a/=10;
+    }
+    while (result > 9)
+    {
+        int temp = result;
+        result = 0;
+        while (temp > 0)
+        {
+            result+=temp%10;
+            temp/=10;
+        }
+    }
+    return result;
+}
+
+System.Console.WriteLine(SumCharNumber(num));
