@@ -32,7 +32,7 @@
 //    Console.WriteLine("Это число не является квадратом " + usernumber); 
 // }
 
-// Выведение дней недели
+// Вывод дней недели
 
 // Console.Write("Введите число-> ");
 // int usernumber = Convert.ToInt32(Console.ReadLine());

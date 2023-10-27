@@ -92,3 +92,48 @@
 // }
 
 // Console.WriteLine(SumCharNumber(num));
+
+int[] arr = {1, 9, 3, 6, -5};
+int count = arr.Length;
+int n = 0;
+void SortedArray(int[] array)
+{
+    while (n < count)
+    {
+        int index = 1;
+        int max = array[0];
+        int temp = 0;
+        while (index < count)
+        {
+            if (max < array[index])
+            {
+                temp = max;
+                max = array[index];
+                array[index-1] = temp;
+        
+            }
+            else
+            {
+                temp = array[index];
+                array[index] = max;
+                array[index-1] = temp;
+            }    
+            index++;
+        }
+        count--;    
+    }    
+}
+
+void PrintArray(int[] col)
+    {
+        int count = col.Length;
+        int position = 0;
+        while (position < count)
+        {
+            Console.Write($"{col[position]} ");
+            position++;
+        }
+    }
+
+SortedArray(arr);
+PrintArray(arr);
