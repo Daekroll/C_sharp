@@ -1,4 +1,7 @@
 ﻿
+// Задача 1.
+// Вариант 1.
+
 // Console.WriteLine("Введите количество чисел");
 // int num = Convert.ToInt32(Console.ReadLine());
 // int count = 0;
@@ -9,6 +12,8 @@
 //     if (num1 > 0) count++;
 // }
 // Console.WriteLine($"Чисел больше нуля: {count}");
+
+// Вариант 2.
 
 // string instruction = "Приветствуем в программе подсчета чисел больше нуля!"
 //                     + " Вводите свои числа нажимая Enter,"
@@ -34,6 +39,7 @@
 
 // System.Console.WriteLine($"Колтчесьво чисел больше нуля: {count}");
 
+// Вариант 3.
 
 // System.Console.WriteLine("Вводите числа, когда закончите - напишите \"end\"");
 
@@ -59,3 +65,26 @@
 //         inOut = true;
 //     }
 // }
+
+// Задачв 2.
+
+// Напишите программу, которая найдёт точку пересечения двух прямых,
+// заданных уравнениями y = k1 * x + b1, y = k2 * x + b2;
+// значения b1, k1, b2 и k2 задаются пользователем.
+
+// b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
+
+
+// System.Console.WriteLine("Введите 4 числа");
+// double b1 = Convert.ToDouble(Console.ReadLine());
+// double k1 = Convert.ToDouble(Console.ReadLine());
+// double b2 = Convert.ToDouble(Console.ReadLine());
+// double k2 = Convert.ToDouble(Console.ReadLine());
+
+// double x = (b2-b1)/(k1-k2);
+// double y = k1 * x + b1;
+
+// double res1 = Math.Round(y,1);
+// double res2 = Math.Round(x,1);
+
+// System.Console.WriteLine($"{res1}; {res2};");
