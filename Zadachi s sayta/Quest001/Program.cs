@@ -171,33 +171,33 @@
 // }
 
 
-int[,] matrixA = 
-{
-    {1,2},
-    {3,4},
-};
-int[,] matrixB = 
-{
-    {5,6},
-    {7,8},
-};
-// 0,0 * 0,0 + 0,1*1,0
-// 0,0 * 0,1 + 0,1*1,1 
-// 1,0 * 0,0 + 1,1* 0,1
-// 1,0 * 0,1 + 1,1* 1,1
-int[,] matrixC = new int[matrixA.GetLength(0),matrixB.GetLength(1)];
-for (int i = 0; i < matrixA.GetLength(0); i++)
-{
-    for (int j = 0; j < matrixB.GetLength(1); j++)
-    {
-        for (int k = 1; k < matrixB.GetLength(1); k++)
-        {
-            matrixC[i,j] = matrixA[i,0]*matrixB[0,j]+matrixA[i,k]*matrixB[k,j];
-            System.Console.WriteLine($"{i},{i} {i},{j} {i},{k} {k},{j}");
-        }
-    }
-}
-PrintArray(matrixC);
+// int[,] matrixA = 
+// {
+//     {1,2},
+//     {3,4},
+// };
+// int[,] matrixB = 
+// {
+//     {5,6},
+//     {7,8},
+// };
+// // 0,0 * 0,0 + 0,1*1,0
+// // 0,0 * 0,1 + 0,1*1,1 
+// // 1,0 * 0,0 + 1,1* 0,1
+// // 1,0 * 0,1 + 1,1* 1,1
+// int[,] matrixC = new int[matrixA.GetLength(0),matrixB.GetLength(1)];
+// for (int i = 0; i < matrixA.GetLength(0); i++)
+// {
+//     for (int j = 0; j < matrixB.GetLength(1); j++)
+//     {
+//         for (int k = 1; k < matrixB.GetLength(1); k++)
+//         {
+//             matrixC[i,j] = matrixA[i,0]*matrixB[0,j]+matrixA[i,k]*matrixB[k,j];
+//             System.Console.WriteLine($"{i},{i} {i},{j} {i},{k} {k},{j}");
+//         }
+//     }
+// }
+// PrintArray(matrixC);
 
 void PrintArray(int[,] array)
 {
@@ -210,5 +210,40 @@ void PrintArray(int[,] array)
         Console.WriteLine();
     }
     System.Console.WriteLine();
-    System.Console.WriteLine();
 }
+
+
+int[,] matrixA = 
+{
+    {2,2},
+    {2,2},
+    {2,2},
+};
+int[,] matrixB = 
+{
+    {2,2,2},
+    {2,2,2},
+};
+
+int[,] MatrixMultiplication(int[,] matrixA, int[,] matrixB)
+    {       
+        if (matrixA.GetLength(1) != matrixB.GetLength(0))
+        {
+            throw new Exception("It is impossible to multiply.");
+        }
+        int[,] matrixC = new int[matrixA.GetLength(0), matrixB.GetLength(1)];
+        for (int i = 0; i < matrixA.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrixB.GetLength(1); j++)
+            {
+                for (int k = 0; k < matrixA.GetLength(1); k++)
+                {
+                    matrixC[i, j] += matrixA[i, k] * matrixB[k, j];
+                }
+            }
+        }
+        return matrixC;
+    }
+int[,] matrixC = MatrixMultiplication(matrixA, matrixB);
+PrintArray(matrixC);
+
