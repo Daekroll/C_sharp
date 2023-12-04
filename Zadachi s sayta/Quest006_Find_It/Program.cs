@@ -146,10 +146,21 @@
 // }
 
 
-long n = 1;
-System.Console.WriteLine(n);
-for (int i = 0; i <= 57; i++)
+// long n = 1;
+// System.Console.WriteLine(n);
+// for (int i = 0; i <= 57; i++)
+// {
+//     n = n*2;
+// }
+// System.Console.WriteLine(n);
+
+int n = 20;
+int count2 = 20;
+int count = 1;
+while (count<15)
 {
-    n = n*2;
+    n+=4;
+    count2+=n;
+    count++;
 }
-System.Console.WriteLine(n);
+System.Console.WriteLine(count2);
